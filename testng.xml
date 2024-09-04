@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="1">
+	<parameter name="projName" value="Minop" />
+	<test name="Init">
+		<classes>
+			<class name="utils.GlobalSetup"> </class>
+		</classes>
+	</test>
+
+	<test name="Mobile1">
+		<parameter name="device" value="1" />
+		<classes>
+			<!-- <class name="androidtest.MinopForgotPasswordTest"></class> -->
+			<!-- <class name="androidtest.MinopLeaveRequestTest_Part1"></class> -->
+			<class name="androidtest.MinopAttendanceReportTest"></class>
+			<!-- 	<class name="androidtest.MinopHomeTest"></class>
+	<class name="androidtest.MinopLeaveRequestTest_Part2"></class>
+
+	<class name="androidtest.MinopApproveLeaveTest"></class>
+	<class name="androidtest.MinopAttendanceCorrectionTest"></class>
+ -->
+		</classes>
+	</test>
+	<!-- <test name="Browser"  parallel="tests">     
+		<parameter name="device" value="3" />
+		<classes>
+			<class name="browsertest.MinopLoginBrowTest">	</class>
+		</classes>
+	</test> -->
+	<!-- <test name="Mobile2">
+		<parameter name="device" value="2" />
+		<classes>
+			<class name="androidtest.MinopLeaveRequestTest_Part2"></class>
+		</classes>
+	</test> -->
+
+</suite> <!--
+Suite -->
